@@ -1,0 +1,5 @@
+Guaranteed curated compliments: 1,200
+Categories: 8
+Compliments per category: 150
+Duplicate check: case-insensitive exact text; passed
+Complimentr: local package API retained and invoked for optional bonus entries

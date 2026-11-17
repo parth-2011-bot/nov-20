@@ -1,0 +1,345 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff2e9">
+  <meta name="description" content="A very normal birthday website for Palak. Obviously.">
+  <title>anyway, it's your birthday.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Back to the beginning">p. <span>20/11</span></a>
+    <div class="top-right">
+      <span id="countdown" aria-live="off">counting down...</span>
+      <span class="music-indicator" id="musicIndicator">♫ no music</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE 1: INTRODUCTION -->
+    <section class="page active" id="home" data-page="0" aria-labelledby="home-title">
+      <div class="intro-wrap">
+        <p class="eyebrow">a very ordinary birthday website</p>
+
+        <h1 id="home-title">oh. it's <em>your</em><br>birthday.</h1>
+
+        <p class="subline">
+          happy birthday, palak. also, on the second page there's this sort of
+          generator i made using an algorithm. if it says anything weird, blame
+          the code, not me. anyway.
+        </p>
+
+        <div class="intro-doodles" aria-hidden="true">
+          <span>✳</span><span>♡</span><span>✦</span><span>!</span>
+        </div>
+
+        <button class="primary-button" data-next="1">
+          okay, what did you make? <span>↗</span>
+        </button>
+
+        <p class="tiny-note">this is not a big deal. obviously.</p>
+
+        <!-- NEW: FIRST PAGE MUSIC PICKER -->
+        <div class="home-music-picker">
+          <p class="eyebrow">a little background music?</p>
+
+          <div class="music-options" role="group" aria-label="Choose background music">
+            <button class="music-choice" data-track="1">01 · Song 1</button>
+            <button class="music-choice" data-track="2">02 · Song 2</button>
+            <button class="music-choice" data-track="3">03 · Song 3</button>
+            <button class="music-choice" data-track="4">04 · Song 4</button>
+            <button class="music-choice active" data-track="none">Ⅱ · No music</button>
+          </div>
+        </div>
+        <!-- END NEW MUSIC PICKER -->
+
+      </div>
+
+      <div class="corner-note">
+        btw its not like i care or something i amm too nonchalant for that.
+      </div>
+    </section>
+
+
+    <!-- PAGE 2: ADMIRATION GENERATOR -->
+    <section class="page" id="admiration" data-page="1" aria-labelledby="admiration-title">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 02 · a minor technical issue</p>
+        <h2 id="admiration-title">the admiration<br><em>problem.</em></h2>
+        <p>There are a few things worth mentioning. Unfortunately, the list got a little out of hand.</p>
+      </div>
+
+      <div class="generator">
+        <div class="generator-top">
+          <span>PALAK APPRECIATION DATABASE</span>
+          <span id="reasonCount">000 / 000</span>
+        </div>
+
+        <div class="reason-window" aria-live="polite">
+          <span class="reason-category" id="reasonCategory">THE OBVIOUS ONES</span>
+          <p id="reasonText">Loading a perfectly reasonable compliment...</p>
+          <span class="reason-index" id="reasonIndex">NO. 001</span>
+        </div>
+
+        <div class="generator-actions">
+          <button class="primary-button" id="nextReason">another one, i guess ↗</button>
+          <button class="text-button" id="randomReason">reshuffle the universe</button>
+        </div>
+
+        <p class="generator-footnote">
+          database status: concerningly extensive.
+          <span id="generatorStatus">Complimentr engine ready.</span>
+        </p>
+      </div>
+
+      <button class="next-link" data-next="2">alright, moving on <span>→</span></button>
+    </section>
+
+
+    <!-- PAGE 3: ACCIDENTAL EXPOSURE -->
+    <section class="page" id="exposure" data-page="2" aria-labelledby="exposure-title">
+      <div class="exposure-wrap">
+        <p class="eyebrow">chapter 03 · an unfortunate development</p>
+
+        <h2 id="exposure-title">i fear this is<br>getting <em>obvious.</em></h2>
+
+        <p class="exposure-copy">
+          I was going to keep this very casual, but apparently I have a lot to say about you.
+        </p>
+
+        <div class="exposure-stage" aria-label="A heart surrounded by little reminders of Palak">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="center-heart">♡</div>
+
+          <span class="orbit-word w1">your laugh</span>
+          <span class="orbit-word w2">your brain</span>
+          <span class="orbit-word w3">your chaos</span>
+          <span class="orbit-word w4">just you, honestly</span>
+
+          <span class="spark s1">✦</span>
+          <span class="spark s2">✳</span>
+          <span class="spark s3">♡</span>
+        </div>
+
+        <p class="small-confession">anyway. not making it weird. happy birthday.</p>
+
+        <button class="primary-button" data-next="3">moving on↗</button>
+      </div>
+    </section>
+
+
+    <!-- PAGE 4: BIRTHDAY ROOM -->
+    <section class="page room-page" id="birthday-room" data-page="3" aria-labelledby="room-title">
+
+      <div class="room-header">
+        <div>
+          <p class="eyebrow">chapter 04 your room</p>
+          <h2 id="room-title">make yourself<br><em>at home.</em></h2>
+        </div>
+
+        <p>
+          Idk why i made this one but basically its a minigame where you have to blow of cake's candle and like idk you can customize the room.
+        </p>
+      </div>
+
+      <div class="room-layout">
+
+        <div class="room-scene" id="roomScene" aria-label="A cosy illustrated birthday room. Add decorations and play the cake challenge.">
+
+          <div class="room-wall"></div>
+          <div class="wall-wainscot"></div>
+          <div class="room-floor"></div>
+
+          <div class="window-frame">
+            <div class="window-view">
+              <span class="window-moon"></span>
+              <i class="window-cloud cloud-a"></i>
+              <i class="window-cloud cloud-b"></i>
+            </div>
+            <b></b><i></i>
+          </div>
+
+          <div class="wall-art art-left">
+            <span>✿</span>
+            <small>good things<br>grow here</small>
+          </div>
+
+          <div class="wall-art art-right">
+            <span>♡</span>
+            <small>you are<br>the occasion</small>
+          </div>
+
+          <div class="fairy-wire" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+
+          <div class="room-shelf">
+            <span>✿</span><span>▰</span><span>♡</span><span>✧</span>
+          </div>
+
+          <div class="dresser">
+            <div class="dresser-top"></div>
+            <span></span><span></span><i>✿</i>
+          </div>
+
+          <div class="rug"></div>
+
+          <div class="plant plant-left">
+            <i></i><i></i><i></i><b></b>
+          </div>
+
+          <div class="plant plant-right">
+            <i></i><i></i><i></i><b></b>
+          </div>
+
+          <div class="room-banner" id="roomBanner">HAPPY BIRTHDAY PALAK</div>
+
+          <div class="decor-layer" id="decorLayer" aria-live="polite"></div>
+
+          <div class="cake-table">
+            <div class="cake-title"></div>
+
+            <div class="cake-wrap" id="cakeWrap">
+              <div class="cake" id="cake" aria-label="Birthday cake with sixteen candles">
+                <div class="candles" id="candles"></div>
+                <div class="icing"></div>
+                <div class="cake-body"><span>16</span></div>
+                <div class="cake-plate"></div>
+              </div>
+
+              <div class="cake-shadow"></div>
+              <div class="explosion-layer" id="explosionLayer" aria-hidden="true"></div>
+            </div>
+
+            <div class="cake-instructions" id="cakeInstructions">
+              16 candles. 5 seconds. tap every candle to blow it out.
+            </div>
+
+            <button class="cake-button" id="startCake">START THE CANDLE CHAOS</button>
+
+            <div class="timer" id="cakeTimer">05.0</div>
+            <div class="cake-result" id="cakeResult" aria-live="polite"></div>
+          </div>
+
+          <div class="balloon balloon-a"></div>
+          <div class="balloon balloon-b"></div>
+          <div class="balloon balloon-c"></div>
+
+          <div class="room-floorboard"></div>
+        </div>
+
+
+        <!-- ROOM CUSTOMISATION PANEL -->
+        <aside class="decor-panel">
+
+          <p class="eyebrow">room customisation</p>
+          <h3>add some stuff.</h3>
+
+          <p class="panel-hint">Tap an item to add it. Tap it in the room to remove it.</p>
+
+          <div class="decor-options">
+            <button data-decor="🎈" aria-label="Add balloons">🎈 <span>balloons</span></button>
+            <button data-decor="✦" aria-label="Add fairy lights">✦ <span>fairy lights</span></button>
+            <button data-decor="🌷" aria-label="Add flowers">🌷 <span>flowers</span></button>
+            <button data-decor="♡" aria-label="Add hearts">♡ <span>hearts</span></button>
+            <button data-decor="🎀" aria-label="Add ribbons">🎀 <span>ribbons</span></button>
+            <button data-decor="★" aria-label="Add stars">★ <span>stars</span></button>
+            <button data-decor="🧁" aria-label="Add cupcakes">🧁 <span>cupcakes</span></button>
+            <button data-decor="🪩" aria-label="Add a disco ball">🪩 <span>disco ball</span></button>
+          </div>
+
+          <button class="text-button" id="clearDecor">clear the room</button>
+
+
+          <!-- EXISTING MUSIC PICKER -->
+          <div class="music-picker">
+            <p class="eyebrow">the birthday soundtrack</p>
+            <h3>choose a tune.</h3>
+
+            <p class="panel-hint">Music starts only when you choose it.</p>
+
+            <div class="music-options" role="group" aria-label="Choose background music">
+              <button class="music-choice" data-track="1"><span>01</span> Song 1</button>
+              <button class="music-choice" data-track="2"><span>02</span> Song 2</button>
+              <button class="music-choice" data-track="3"><span>03</span> Song 3</button>
+              <button class="music-choice" data-track="4"><span>04</span> Song 4</button>
+              <button class="music-choice active" data-track="none"><span>Ⅱ</span> No music</button>
+            </div>
+
+            <p class="music-status" id="musicStatus" aria-live="polite">No music selected.</p>
+          </div>
+
+        </aside>
+      </div>
+
+      <div class="room-bottom">
+        <p>idk have fun goof around.</p>
+        <button class="primary-button" data-next="4">one last thing ↗</button>
+      </div>
+
+    </section>
+
+
+    <!-- PAGE 5: LETTER -->
+    <section class="page letter-page" id="letter" data-page="4" aria-labelledby="letter-title">
+
+      <div class="letter-shell">
+        <p class="eyebrow">chapter 05 · no more pretending to be casual</p>
+
+        <h2 id="letter-title">okay, one last<br><em>thing.</em></h2>
+
+        <article class="letter-paper">
+          <p class="letter-date">20 NOVEMBER · FOR PALAK</p>
+          <div id="letterContent" class="letter-content"></div>
+          <p class="letter-signoff">— from me, obviously.</p>
+        </article>
+
+        <p class="letter-footer">and that's all. (it was, in fact, a big deal.)</p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- PAGE NAVIGATION -->
+  <nav class="page-nav" aria-label="Website sections">
+    <button class="nav-dot active" data-go="0" aria-label="Opening">01</button>
+    <button class="nav-dot" data-go="1" aria-label="Admiration">02</button>
+    <button class="nav-dot" data-go="2" aria-label="Accidental exposure">03</button>
+    <button class="nav-dot" data-go="3" aria-label="Birthday room">04</button>
+    <button class="nav-dot" data-go="4" aria-label="Letter">05</button>
+  </nav>
+
+
+  <!-- BIRTHDAY OVERLAY -->
+  <div class="birthday-overlay" id="birthdayOverlay" hidden aria-live="assertive">
+    <div class="overlay-card">
+      <span class="overlay-spark">✦ ✿ ✦</span>
+      <p>THE KINGDOM HAS BEEN INFORMED</p>
+      <h2>HAPPY BIRTHDAY,<br><em>PALAK!</em></h2>
+      <p class="birthday-message" id="birthdayMessage"></p>
+      <button class="primary-button" id="closeBirthdayOverlay">i know, i know ↗</button>
+    </div>
+  </div>
+
+
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
+
